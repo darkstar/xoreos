@@ -23,12 +23,12 @@
  * The Electron engine, Copyright (c) Obsidian Entertainment and BioWare corp.
  */
 
-/** @file engines/nwn/gui/main/mainmenu.h
+/** @file engines/nwn/gui/main/main.h
  *  The main menu.
  */
 
-#ifndef ENGINES_NWN_GUI_MAIN_MAINMENU_H
-#define ENGINES_NWN_GUI_MAIN_MAINMENU_H
+#ifndef ENGINES_NWN_GUI_MAIN_MAIN_H
+#define ENGINES_NWN_GUI_MAIN_MAIN_H
 
 #include "engines/nwn/gui/gui.h"
 
