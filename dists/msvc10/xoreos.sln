@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xoreos", "xoreos.vcxproj", "{D51DEA31-9039-9473-ED58-77A1F89D1B30}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xoreos", "xoreos.vcxproj", "{BC977446-14BE-9D6F-B3DC-BC0F3E877F85}"
 	ProjectSection(ProjectDependencies) = postProject
 		{E3BB7402-6DCB-4E8E-9402-F1F6F0DD3004} = {E3BB7402-6DCB-4E8E-9402-F1F6F0DD3004}
 		{4A325C08-FE44-4B4C-A3BE-6F471E8E3919} = {4A325C08-FE44-4B4C-A3BE-6F471E8E3919}
@@ -77,10 +77,10 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D51DEA31-9039-9473-ED58-77A1F89D1B30}.Debug|Win32.ActiveCfg = Debug|Win32
-		{D51DEA31-9039-9473-ED58-77A1F89D1B30}.Debug|Win32.Build.0 = Debug|Win32
-		{D51DEA31-9039-9473-ED58-77A1F89D1B30}.Release|Win32.ActiveCfg = Release|Win32
-		{D51DEA31-9039-9473-ED58-77A1F89D1B30}.Release|Win32.Build.0 = Release|Win32
+		{BC977446-14BE-9D6F-B3DC-BC0F3E877F85}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BC977446-14BE-9D6F-B3DC-BC0F3E877F85}.Debug|Win32.Build.0 = Debug|Win32
+		{BC977446-14BE-9D6F-B3DC-BC0F3E877F85}.Release|Win32.ActiveCfg = Release|Win32
+		{BC977446-14BE-9D6F-B3DC-BC0F3E877F85}.Release|Win32.Build.0 = Release|Win32
 		{C1774D6B-3D91-45EC-AF82-A9FE8465322A}.Debug|Win32.ActiveCfg = Debug|Win32
 		{C1774D6B-3D91-45EC-AF82-A9FE8465322A}.Debug|Win32.Build.0 = Debug|Win32
 		{C1774D6B-3D91-45EC-AF82-A9FE8465322A}.Release|Win32.ActiveCfg = Release|Win32
