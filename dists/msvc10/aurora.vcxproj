@@ -86,6 +86,16 @@
     <ClInclude Include="..\..\src\aurora\locstring.h" />
     <ClInclude Include="..\..\src\aurora\lytfile.h" />
     <ClInclude Include="..\..\src\aurora\ndsrom.h" />
+    <ClInclude Include="..\..\src\aurora\nwscript\enginetype.h" />
+    <ClInclude Include="..\..\src\aurora\nwscript\functioncontext.h" />
+    <ClInclude Include="..\..\src\aurora\nwscript\functionman.h" />
+    <ClInclude Include="..\..\src\aurora\nwscript\ncsfile.h" />
+    <ClInclude Include="..\..\src\aurora\nwscript\object.h" />
+    <ClInclude Include="..\..\src\aurora\nwscript\objectcontainer.h" />
+    <ClInclude Include="..\..\src\aurora\nwscript\types.h" />
+    <ClInclude Include="..\..\src\aurora\nwscript\util.h" />
+    <ClInclude Include="..\..\src\aurora\nwscript\variable.h" />
+    <ClInclude Include="..\..\src\aurora\nwscript\variablecontainer.h" />
     <ClInclude Include="..\..\src\aurora\pefile.h" />
     <ClInclude Include="..\..\src\aurora\resman.h" />
     <ClInclude Include="..\..\src\aurora\rimfile.h" />
@@ -113,6 +123,17 @@
     <ClCompile Include="..\..\src\aurora\locstring.cpp" />
     <ClCompile Include="..\..\src\aurora\lytfile.cpp" />
     <ClCompile Include="..\..\src\aurora\ndsrom.cpp" />
+    <ClCompile Include="..\..\src\aurora\nwscript\functioncontext.cpp" />
+    <ClCompile Include="..\..\src\aurora\nwscript\functionman.cpp" />
+    <ClCompile Include="..\..\src\aurora\nwscript\ncsfile.cpp" />
+    <ClCompile Include="..\..\src\aurora\nwscript\object.cpp" />
+    <ClCompile Include="..\..\src\aurora\nwscript\objectcontainer.cpp" />
+    <ClCompile Include="..\..\src\aurora\nwscript\util.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/nwscript_util.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/nwscript_util.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\aurora\nwscript\variable.cpp" />
+    <ClCompile Include="..\..\src\aurora\nwscript\variablecontainer.cpp" />
     <ClCompile Include="..\..\src\aurora\pefile.cpp" />
     <ClCompile Include="..\..\src\aurora\resman.cpp" />
     <ClCompile Include="..\..\src\aurora\rimfile.cpp" />

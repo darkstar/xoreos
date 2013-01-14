@@ -153,14 +153,20 @@
     <ClCompile Include="..\..\src\engines\nwn\gui\ingame\compass.cpp" />
     <ClCompile Include="..\..\src\engines\nwn\gui\ingame\dialog.cpp" />
     <ClCompile Include="..\..\src\engines\nwn\gui\ingame\ingame.cpp" />
-    <ClCompile Include="..\..\src\engines\nwn\gui\ingame\main.cpp" />
+    <ClCompile Include="..\..\src\engines\nwn\gui\ingame\main.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/ingame_main.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/ingame_main.obj</ObjectFileName>
+    </ClCompile>
     <ClCompile Include="..\..\src\engines\nwn\gui\ingame\partyleader.cpp" />
     <ClCompile Include="..\..\src\engines\nwn\gui\ingame\quickbar.cpp" />
     <ClCompile Include="..\..\src\engines\nwn\gui\ingame\quickchat.cpp" />
     <ClCompile Include="..\..\src\engines\nwn\gui\legal.cpp" />
     <ClCompile Include="..\..\src\engines\nwn\gui\main\charpremade.cpp" />
     <ClCompile Include="..\..\src\engines\nwn\gui\main\chartype.cpp" />
-    <ClCompile Include="..\..\src\engines\nwn\gui\main\main.cpp" />
+    <ClCompile Include="..\..\src\engines\nwn\gui\main\main.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)/main_main.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)/main_main.obj</ObjectFileName>
+    </ClCompile>
     <ClCompile Include="..\..\src\engines\nwn\gui\main\moviesbase.cpp" />
     <ClCompile Include="..\..\src\engines\nwn\gui\main\moviescamp.cpp" />
     <ClCompile Include="..\..\src\engines\nwn\gui\main\new.cpp" />

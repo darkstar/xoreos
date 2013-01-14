@@ -20,6 +20,15 @@
       <UniqueIdentifier>{6b3c0c33-a0e3-46b2-a2d7-8182b7f7e431}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="aurora">
+      <UniqueIdentifier>{33d5d260-506b-401c-b603-5acf9a9a7318}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aurora\Header Files">
+      <UniqueIdentifier>{c8418941-da01-4fb3-a9e5-ec7cacf7e234}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aurora\Source Files">
+      <UniqueIdentifier>{cbe739b0-d2ae-417e-a80b-a2f8d0b8e790}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\graphics\camera.h">
@@ -109,6 +118,72 @@
     <ClInclude Include="..\..\src\graphics\images\winiconimage.h">
       <Filter>images\Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\abcfont.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\animation.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\animnode.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\cube.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\cursor.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\cursorman.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\fontman.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\fps.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\guiquad.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\model.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\modelnode.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\model_kotor.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\model_nwn.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\model_nwn2.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\model_witcher.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\pltfile.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\text.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\texture.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\texturefont.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\textureman.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\ttffont.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\aurora\types.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\graphics\camera.cpp">
@@ -191,6 +266,69 @@
     </ClCompile>
     <ClCompile Include="..\..\src\graphics\images\winiconimage.cpp">
       <Filter>images\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\abcfont.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\animation.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\animnode.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\cube.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\cursor.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\cursorman.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\fontman.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\fps.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\guiquad.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\model.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\modelnode.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\model_kotor.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\model_nwn.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\model_nwn2.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\model_witcher.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\pltfile.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\text.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\texture.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\texturefont.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\textureman.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\ttffont.cpp">
+      <Filter>aurora\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -71,6 +71,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\src\graphics\aurora\abcfont.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\animation.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\animnode.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\cube.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\cursor.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\cursorman.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\fontman.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\fps.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\guiquad.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\model.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\modelnode.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\model_kotor.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\model_nwn.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\model_nwn2.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\model_witcher.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\pltfile.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\text.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\texture.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\texturefont.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\textureman.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\ttffont.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\types.h" />
     <ClInclude Include="..\..\src\graphics\camera.h" />
     <ClInclude Include="..\..\src\graphics\cursor.h" />
     <ClInclude Include="..\..\src\graphics\font.h" />
@@ -102,6 +124,33 @@
     <ClInclude Include="..\..\src\graphics\yuv_to_rgb.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\src\graphics\aurora\abcfont.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\animation.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\animnode.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\cube.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\cursor.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)\aurora_cursor.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)\aurora_cursor.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\cursorman.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\fontman.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\fps.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\guiquad.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\model.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\modelnode.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\model_kotor.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\model_nwn.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\model_nwn2.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\model_witcher.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\pltfile.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\text.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\texture.cpp">
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)\aurora_texture.obj</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)\aurora_texture.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\aurora\texturefont.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\textureman.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\ttffont.cpp" />
     <ClCompile Include="..\..\src\graphics\camera.cpp" />
     <ClCompile Include="..\..\src\graphics\cursor.cpp" />
     <ClCompile Include="..\..\src\graphics\font.cpp" />

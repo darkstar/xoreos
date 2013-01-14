@@ -9,6 +9,15 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="nwscript">
+      <UniqueIdentifier>{e1e31f5c-563a-48bc-8606-8495a76dce20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nwscript\Header Files">
+      <UniqueIdentifier>{ba19ad02-6cd5-4a6c-aadc-84a7fdac1d9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nwscript\Source Files">
+      <UniqueIdentifier>{cf299d4f-8c21-4734-960f-a22fc60b9c8d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\aurora\2dafile.h">
@@ -86,6 +95,36 @@
     <ClInclude Include="..\..\src\aurora\zipfile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\src\aurora\nwscript\enginetype.h">
+      <Filter>nwscript\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\aurora\nwscript\functioncontext.h">
+      <Filter>nwscript\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\aurora\nwscript\functionman.h">
+      <Filter>nwscript\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\aurora\nwscript\ncsfile.h">
+      <Filter>nwscript\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\aurora\nwscript\object.h">
+      <Filter>nwscript\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\aurora\nwscript\objectcontainer.h">
+      <Filter>nwscript\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\aurora\nwscript\types.h">
+      <Filter>nwscript\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\aurora\nwscript\util.h">
+      <Filter>nwscript\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\aurora\nwscript\variable.h">
+      <Filter>nwscript\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\aurora\nwscript\variablecontainer.h">
+      <Filter>nwscript\Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\src\aurora\2dafile.cpp">
@@ -159,6 +198,30 @@
     </ClCompile>
     <ClCompile Include="..\..\src\aurora\zipfile.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\aurora\nwscript\functioncontext.cpp">
+      <Filter>nwscript\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\aurora\nwscript\functionman.cpp">
+      <Filter>nwscript\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\aurora\nwscript\ncsfile.cpp">
+      <Filter>nwscript\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\aurora\nwscript\object.cpp">
+      <Filter>nwscript\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\aurora\nwscript\objectcontainer.cpp">
+      <Filter>nwscript\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\aurora\nwscript\util.cpp">
+      <Filter>nwscript\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\aurora\nwscript\variable.cpp">
+      <Filter>nwscript\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\aurora\nwscript\variablecontainer.cpp">
+      <Filter>nwscript\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
