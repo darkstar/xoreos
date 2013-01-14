@@ -90,7 +90,7 @@
     <ClInclude Include="..\..\src\engines\nwn\gui\legal.h" />
     <ClInclude Include="..\..\src\engines\nwn\gui\main\charpremade.h" />
     <ClInclude Include="..\..\src\engines\nwn\gui\main\chartype.h" />
-    <ClInclude Include="..\..\src\engines\nwn\gui\main\mainmenu.h" />
+    <ClInclude Include="..\..\src\engines\nwn\gui\main\main.h" />
     <ClInclude Include="..\..\src\engines\nwn\gui\main\moviesbase.h" />
     <ClInclude Include="..\..\src\engines\nwn\gui\main\moviescamp.h" />
     <ClInclude Include="..\..\src\engines\nwn\gui\main\new.h" />
@@ -160,7 +160,7 @@
     <ClCompile Include="..\..\src\engines\nwn\gui\legal.cpp" />
     <ClCompile Include="..\..\src\engines\nwn\gui\main\charpremade.cpp" />
     <ClCompile Include="..\..\src\engines\nwn\gui\main\chartype.cpp" />
-    <ClCompile Include="..\..\src\engines\nwn\gui\main\mainmenu.cpp" />
+    <ClCompile Include="..\..\src\engines\nwn\gui\main\main.cpp" />
     <ClCompile Include="..\..\src\engines\nwn\gui\main\moviesbase.cpp" />
     <ClCompile Include="..\..\src\engines\nwn\gui\main\moviescamp.cpp" />
     <ClCompile Include="..\..\src\engines\nwn\gui\main\new.cpp" />
