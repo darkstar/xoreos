@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6E1F7862-DFC9-4B09-BF44-4667C0206288}</ProjectGuid>
+    <RootNamespace>engine_kotor</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="local_properties.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="local_properties.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\engines\kotor\area.h" />
+    <ClInclude Include="..\..\src\engines\kotor\console.h" />
+    <ClInclude Include="..\..\src\engines\kotor\creature.h" />
+    <ClInclude Include="..\..\src\engines\kotor\door.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\gui.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\main\main.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\main\movies.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\main\options.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\autopause.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\feedback.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\gameplay.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\graphics.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\graphicsadv.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\keyboardconfig.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\mousesettings.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\sound.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\soundadv.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\button.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\checkbox.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\kotorwidget.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\label.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\listbox.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\panel.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\progressbar.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\protoitem.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\scrollbar.h" />
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\slider.h" />
+    <ClInclude Include="..\..\src\engines\kotor\kotor.h" />
+    <ClInclude Include="..\..\src\engines\kotor\modelloader.h" />
+    <ClInclude Include="..\..\src\engines\kotor\module.h" />
+    <ClInclude Include="..\..\src\engines\kotor\object.h" />
+    <ClInclude Include="..\..\src\engines\kotor\placeable.h" />
+    <ClInclude Include="..\..\src\engines\kotor\situated.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\engines\kotor\area.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\console.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\creature.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\door.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\gui.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\main\main.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\main\movies.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\main\options.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\autopause.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\feedback.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\gameplay.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\graphics.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\graphicsadv.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\keyboardconfig.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\mousesettings.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\sound.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\soundadv.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\button.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\checkbox.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\kotorwidget.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\label.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\listbox.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\panel.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\progressbar.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\protoitem.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\scrollbar.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\slider.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\kotor.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\modelloader.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\module.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\object.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\placeable.cpp" />
+    <ClCompile Include="..\..\src\engines\kotor\situated.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A31C5DDE-800C-4F52-8806-DC8011C3B005}</ProjectGuid>
+    <RootNamespace>common</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="local_properties.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="local_properties.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996;4305</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4996;4305</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\common\bitstream.h" />
+    <ClInclude Include="..\..\src\common\boundingbox.h" />
+    <ClInclude Include="..\..\src\common\configfile.h" />
+    <ClInclude Include="..\..\src\common\configman.h" />
+    <ClInclude Include="..\..\src\common\cosinetables.h" />
+    <ClInclude Include="..\..\src\common\dct.h" />
+    <ClInclude Include="..\..\src\common\debug.h" />
+    <ClInclude Include="..\..\src\common\debugman.h" />
+    <ClInclude Include="..\..\src\common\endianness.h" />
+    <ClInclude Include="..\..\src\common\error.h" />
+    <ClInclude Include="..\..\src\common\fft.h" />
+    <ClInclude Include="..\..\src\common\file.h" />
+    <ClInclude Include="..\..\src\common\filelist.h" />
+    <ClInclude Include="..\..\src\common\filepath.h" />
+    <ClInclude Include="..\..\src\common\foxpro.h" />
+    <ClInclude Include="..\..\src\common\hash.h" />
+    <ClInclude Include="..\..\src\common\huffman.h" />
+    <ClInclude Include="..\..\src\common\maths.h" />
+    <ClInclude Include="..\..\src\common\matrix.h" />
+    <ClInclude Include="..\..\src\common\mdct.h" />
+    <ClInclude Include="..\..\src\common\mutex.h" />
+    <ClInclude Include="..\..\src\common\noncopyable.h" />
+    <ClInclude Include="..\..\src\common\pe_exe.h" />
+    <ClInclude Include="..\..\src\common\rdft.h" />
+    <ClInclude Include="..\..\src\common\readline.h" />
+    <ClInclude Include="..\..\src\common\sinetables.h" />
+    <ClInclude Include="..\..\src\common\sinewindows.h" />
+    <ClInclude Include="..\..\src\common\singleton.h" />
+    <ClInclude Include="..\..\src\common\stream.h" />
+    <ClInclude Include="..\..\src\common\streamtokenizer.h" />
+    <ClInclude Include="..\..\src\common\stringmap.h" />
+    <ClInclude Include="..\..\src\common\strutil.h" />
+    <ClInclude Include="..\..\src\common\system.h" />
+    <ClInclude Include="..\..\src\common\systemfonts.h" />
+    <ClInclude Include="..\..\src\common\thread.h" />
+    <ClInclude Include="..\..\src\common\threads.h" />
+    <ClInclude Include="..\..\src\common\transmatrix.h" />
+    <ClInclude Include="..\..\src\common\types.h" />
+    <ClInclude Include="..\..\src\common\ustring.h" />
+    <ClInclude Include="..\..\src\common\util.h" />
+    <ClInclude Include="..\..\src\common\uuid.h" />
+    <ClInclude Include="..\..\src\common\zipfile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\common\boundingbox.cpp" />
+    <ClCompile Include="..\..\src\common\configfile.cpp" />
+    <ClCompile Include="..\..\src\common\configman.cpp" />
+    <ClCompile Include="..\..\src\common\cosinetables.cpp" />
+    <ClCompile Include="..\..\src\common\dct.cpp" />
+    <ClCompile Include="..\..\src\common\debug.cpp" />
+    <ClCompile Include="..\..\src\common\debugman.cpp" />
+    <ClCompile Include="..\..\src\common\error.cpp" />
+    <ClCompile Include="..\..\src\common\fft.cpp" />
+    <ClCompile Include="..\..\src\common\file.cpp" />
+    <ClCompile Include="..\..\src\common\filelist.cpp" />
+    <ClCompile Include="..\..\src\common\filepath.cpp" />
+    <ClCompile Include="..\..\src\common\foxpro.cpp" />
+    <ClCompile Include="..\..\src\common\huffman.cpp" />
+    <ClCompile Include="..\..\src\common\maths.cpp" />
+    <ClCompile Include="..\..\src\common\matrix.cpp" />
+    <ClCompile Include="..\..\src\common\mdct.cpp" />
+    <ClCompile Include="..\..\src\common\mutex.cpp" />
+    <ClCompile Include="..\..\src\common\pe_exe.cpp" />
+    <ClCompile Include="..\..\src\common\rdft.cpp" />
+    <ClCompile Include="..\..\src\common\readline.cpp" />
+    <ClCompile Include="..\..\src\common\sinetables.cpp" />
+    <ClCompile Include="..\..\src\common\sinewindows.cpp" />
+    <ClCompile Include="..\..\src\common\stream.cpp" />
+    <ClCompile Include="..\..\src\common\streamtokenizer.cpp" />
+    <ClCompile Include="..\..\src\common\stringmap.cpp" />
+    <ClCompile Include="..\..\src\common\strutil.cpp" />
+    <ClCompile Include="..\..\src\common\systemfonts.cpp" />
+    <ClCompile Include="..\..\src\common\thread.cpp" />
+    <ClCompile Include="..\..\src\common\threads.cpp" />
+    <ClCompile Include="..\..\src\common\transmatrix.cpp" />
+    <ClCompile Include="..\..\src\common\ustring.cpp" />
+    <ClCompile Include="..\..\src\common\util.cpp" />
+    <ClCompile Include="..\..\src\common\uuid.cpp" />
+    <ClCompile Include="..\..\src\common\zipfile.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

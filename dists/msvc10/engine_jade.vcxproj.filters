@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{678ba4e4-d043-4f57-9eb4-e9ba954d9c86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\main">
+      <UniqueIdentifier>{37d6a21e-3ffe-49d7-a385-191ceadd5610}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\main\Header Files">
+      <UniqueIdentifier>{129b9488-b74e-461f-ac69-835c15df2b6d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gui\main\Source Files">
+      <UniqueIdentifier>{958ce31e-8870-45f4-a7ce-75f6c56d658f}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\engines\jade\gui\main\main.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\jade\jade.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\engines\jade\gui\main\main.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\jade\jade.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

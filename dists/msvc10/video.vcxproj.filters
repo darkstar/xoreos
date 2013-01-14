@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="aurora">
+      <UniqueIdentifier>{b795a66b-d63b-4827-8342-03c36be8d8d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codecs">
+      <UniqueIdentifier>{65dc9b65-3b3b-44af-a543-ede85249647a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="aurora\Header Files">
+      <UniqueIdentifier>{c574e845-84f6-4e2e-822a-52418aad41fb}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="codecs\Header Files">
+      <UniqueIdentifier>{f6a25ce6-ea72-4e46-b524-1c15e40b35d2}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="aurora\Source Files">
+      <UniqueIdentifier>{c06fa974-6e44-49c2-b906-3713d5f0a99e}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="codecs\Source Files">
+      <UniqueIdentifier>{90984ef0-9b95-4e13-bbfa-e237582d5e90}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\video\codecs\codec.h">
+      <Filter>codecs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\codecs\h263.h">
+      <Filter>codecs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\codecs\wmv2data.h">
+      <Filter>codecs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\codecs\xmvwmv2.h">
+      <Filter>codecs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\aurora\videoplayer.h">
+      <Filter>aurora\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\actimagine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\bink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\binkdata.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\decoder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\fader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\quicktime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\video\xmv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\video\codecs\codec.cpp">
+      <Filter>codecs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\codecs\h263.cpp">
+      <Filter>codecs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\codecs\wmv2data.cpp">
+      <Filter>codecs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\codecs\xmvwmv2.cpp">
+      <Filter>codecs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\aurora\videoplayer.cpp">
+      <Filter>aurora\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\actimagine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\bink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\decoder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\fader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\quicktime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\video\xmv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,540 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="script">
+      <UniqueIdentifier>{cf92ec92-42be-4736-8920-47d4617a3265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{f4015445-c390-4406-8d2a-cc1ff59f0595}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="script\Header Files">
+      <UniqueIdentifier>{16e1d324-3753-4fed-a420-bd0e3d3cf651}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="script\Source Files">
+      <UniqueIdentifier>{94333be7-2d2e-48c0-b4ba-3deebbf566e3}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="gui\Source Files">
+      <UniqueIdentifier>{61769695-dbf1-4ef4-85c1-016d5a786bf5}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="gui\Header Files">
+      <UniqueIdentifier>{3d27dbaf-1df4-488c-9d51-9a75b185d19d}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gui\dialogs">
+      <UniqueIdentifier>{d547ea73-0fe4-4acf-92de-9a0be72ef847}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\chargen">
+      <UniqueIdentifier>{d3d3cfeb-5263-4c7d-8344-6d7ff1d5a204}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\ingame">
+      <UniqueIdentifier>{eb2f55b5-fedd-4d08-8cb9-b7c214957cff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\main">
+      <UniqueIdentifier>{ce0fd50f-7b4c-4b83-8aba-3ff8fc517862}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\options">
+      <UniqueIdentifier>{58a4bdfa-0673-4663-91ac-e4d8eb0b2b72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets">
+      <UniqueIdentifier>{eb727f01-690e-43e1-99f0-dd7728fbfdda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\dialogs\Header Files">
+      <UniqueIdentifier>{0af5485b-3d9c-4827-8c24-8899272b1efe}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gui\dialogs\Source Files">
+      <UniqueIdentifier>{bc56c898-fed4-4686-af60-be2410294153}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="gui\chargen\Header Files">
+      <UniqueIdentifier>{ad4c77d7-1ba9-4b91-8891-5fdbe6a15824}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gui\chargen\Source Files">
+      <UniqueIdentifier>{f91d320b-6fb9-49b2-83e7-ff2a87e7fe59}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="gui\ingame\Source Files">
+      <UniqueIdentifier>{0fa58670-0537-4d49-afbc-b4b25bc36b05}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="gui\ingame\Header Files">
+      <UniqueIdentifier>{814086ae-f19c-4b55-a0a4-aa5790e45afa}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gui\main\Header Files">
+      <UniqueIdentifier>{b0bde68d-e18d-44ed-9217-583359b07b7e}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gui\main\Source Files">
+      <UniqueIdentifier>{fca97215-4558-4747-b6a4-03ec17b8368d}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="gui\widgets\Header Files">
+      <UniqueIdentifier>{fa648d56-dcff-4577-8034-4c0568fe9775}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gui\widgets\Source Files">
+      <UniqueIdentifier>{ea0edad5-0eeb-48f5-9c34-25a9e1fd1b55}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="gui\options\Header Files">
+      <UniqueIdentifier>{663747a9-b9d4-4871-9478-9aa3c39ca33f}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gui\options\Source Files">
+      <UniqueIdentifier>{18c6ae8b-76f9-4da6-9394-6f3cf17e2448}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\engines\nwn\area.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\creature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\door.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\ifofile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\item.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\location.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\modelloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\nwn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\placeable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\situated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\tileset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\waypoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\gui.h">
+      <Filter>gui\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\legal.h">
+      <Filter>gui\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\script\container.h">
+      <Filter>script\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\script\functions.h">
+      <Filter>script\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\dialogs\okcancel.h">
+      <Filter>gui\dialogs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\dialogs\yesnocancel.h">
+      <Filter>gui\dialogs\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\chargen\chargen.h">
+      <Filter>gui\chargen\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\ingame\charinfo.h">
+      <Filter>gui\ingame\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\ingame\compass.h">
+      <Filter>gui\ingame\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\ingame\dialog.h">
+      <Filter>gui\ingame\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\ingame\ingame.h">
+      <Filter>gui\ingame\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\ingame\partyleader.h">
+      <Filter>gui\ingame\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\ingame\quickbar.h">
+      <Filter>gui\ingame\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\ingame\quickchat.h">
+      <Filter>gui\ingame\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\main\charpremade.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\main\chartype.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\main\main.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\main\moviesbase.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\main\moviescamp.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\main\new.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\main\newcamp.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\main\newgamefog.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\main\newmodule.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\main\newxp1.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\main\newxp2.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\main\options.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\button.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\checkbox.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\close.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\editbox.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\frame.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\label.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\listbox.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\modelwidget.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\nwnwidget.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\panel.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\portrait.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\quadwidget.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\scrollbar.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\slider.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\textwidget.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\widgets\tooltip.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\options\controls.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\options\feedback.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\options\game.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\options\gorepass.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\options\resolution.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\options\sound.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\options\soundadv.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\options\video.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\options\videoadv.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\nwn\gui\ingame\main.h">
+      <Filter>gui\ingame\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\engines\nwn\area.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\creature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\door.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\ifofile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\item.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\location.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\modelloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\module.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\nwn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\placeable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\situated.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\tileset.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\types.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\waypoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\gui.cpp">
+      <Filter>gui\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\legal.cpp">
+      <Filter>gui\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\script\container.cpp">
+      <Filter>script\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\script\functions.cpp">
+      <Filter>script\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\script\functions_000.cpp">
+      <Filter>script\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\script\functions_100.cpp">
+      <Filter>script\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\script\functions_200.cpp">
+      <Filter>script\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\script\functions_300.cpp">
+      <Filter>script\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\script\functions_400.cpp">
+      <Filter>script\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\script\functions_500.cpp">
+      <Filter>script\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\script\functions_600.cpp">
+      <Filter>script\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\script\functions_700.cpp">
+      <Filter>script\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\script\functions_800.cpp">
+      <Filter>script\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\dialogs\okcancel.cpp">
+      <Filter>gui\dialogs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\dialogs\yesnocancel.cpp">
+      <Filter>gui\dialogs\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\chargen\chargen.cpp">
+      <Filter>gui\chargen\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\ingame\charinfo.cpp">
+      <Filter>gui\ingame\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\ingame\compass.cpp">
+      <Filter>gui\ingame\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\ingame\dialog.cpp">
+      <Filter>gui\ingame\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\ingame\ingame.cpp">
+      <Filter>gui\ingame\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\ingame\partyleader.cpp">
+      <Filter>gui\ingame\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\ingame\quickbar.cpp">
+      <Filter>gui\ingame\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\ingame\quickchat.cpp">
+      <Filter>gui\ingame\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\main\charpremade.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\main\chartype.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\main\main.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\main\moviesbase.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\main\moviescamp.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\main\new.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\main\newcamp.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\main\newgamefog.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\main\newmodule.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\main\newxp1.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\main\newxp2.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\main\options.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\button.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\checkbox.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\close.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\editbox.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\frame.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\label.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\listbox.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\modelwidget.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\nwnwidget.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\panel.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\portrait.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\quadwidget.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\scrollbar.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\slider.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\textwidget.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\widgets\tooltip.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\options\controls.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\options\feedback.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\options\game.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\options\gorepass.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\options\resolution.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\options\sound.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\options\soundadv.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\options\video.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\options\videoadv.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\nwn\gui\ingame\main.cpp">
+      <Filter>gui\ingame\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

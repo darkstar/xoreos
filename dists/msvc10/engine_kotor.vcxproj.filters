@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gui">
+      <UniqueIdentifier>{5c83a103-f4f1-4465-8fd8-98ed0cecf481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\Header Files">
+      <UniqueIdentifier>{6703e95a-7326-4e6b-a704-04c509e788c9}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gui\Source Files">
+      <UniqueIdentifier>{5ed9fc00-8ee2-4dd9-aa2d-6de6d63e6401}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="gui\main">
+      <UniqueIdentifier>{c62ca7d4-9704-4216-ba0d-382055d9c259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\options">
+      <UniqueIdentifier>{c61235b3-00be-48e8-abc2-daea7a021ba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\widgets">
+      <UniqueIdentifier>{a13d49c1-3ad7-49ce-b0c0-6f631b3618a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gui\main\Header Files">
+      <UniqueIdentifier>{7c1ea1e9-c159-498b-9e79-a867c614e447}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gui\widgets\Header Files">
+      <UniqueIdentifier>{d3c91396-1eb1-4f00-b643-4be66c5ba1f4}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gui\options\Header Files">
+      <UniqueIdentifier>{0a354e2c-82c1-43c9-82da-16d9b36e2192}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="gui\options\Source Files">
+      <UniqueIdentifier>{7f344691-51ee-4d85-ac18-c3be3ae116c9}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="gui\widgets\Source Files">
+      <UniqueIdentifier>{2d512bfb-35d9-4598-bf96-e72141e9c548}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="gui\main\Source Files">
+      <UniqueIdentifier>{29705f90-15ed-4f7b-846e-e89542d94c38}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\engines\kotor\area.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\console.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\creature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\door.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\kotor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\modelloader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\placeable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\situated.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\gui.h">
+      <Filter>gui\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\main\main.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\main\movies.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\main\options.h">
+      <Filter>gui\main\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\button.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\checkbox.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\kotorwidget.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\label.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\listbox.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\panel.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\progressbar.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\protoitem.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\scrollbar.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\widgets\slider.h">
+      <Filter>gui\widgets\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\autopause.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\feedback.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\gameplay.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\graphics.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\graphicsadv.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\keyboardconfig.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\mousesettings.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\sound.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\engines\kotor\gui\options\soundadv.h">
+      <Filter>gui\options\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\engines\kotor\area.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\creature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\door.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\kotor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\modelloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\module.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\placeable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\situated.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\gui.cpp">
+      <Filter>gui\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\main\main.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\main\movies.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\main\options.cpp">
+      <Filter>gui\main\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\button.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\checkbox.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\kotorwidget.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\label.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\listbox.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\panel.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\progressbar.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\protoitem.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\scrollbar.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\widgets\slider.cpp">
+      <Filter>gui\widgets\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\autopause.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\feedback.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\gameplay.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\graphics.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\graphicsadv.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\keyboardconfig.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\mousesettings.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\sound.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\engines\kotor\gui\options\soundadv.cpp">
+      <Filter>gui\options\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

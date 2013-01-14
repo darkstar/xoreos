@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="decoders">
+      <UniqueIdentifier>{38a7c6a1-dec2-40ba-bcef-019104a371ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="decoders\Header Files">
+      <UniqueIdentifier>{f7e9d5b7-1a0e-41c7-8da7-7b9b367fe463}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="decoders\Source Files">
+      <UniqueIdentifier>{f55ab883-dd24-49e0-ab4a-4226410e4fc4}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\sound\decoders\aac.h">
+      <Filter>decoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sound\decoders\adpcm.h">
+      <Filter>decoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sound\decoders\asf.h">
+      <Filter>decoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sound\decoders\codec.h">
+      <Filter>decoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sound\decoders\mp3.h">
+      <Filter>decoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sound\decoders\pcm.h">
+      <Filter>decoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sound\decoders\util.h">
+      <Filter>decoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sound\decoders\vorbis.h">
+      <Filter>decoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sound\decoders\wave.h">
+      <Filter>decoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sound\decoders\wave_types.h">
+      <Filter>decoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sound\decoders\wma.h">
+      <Filter>decoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sound\decoders\wmadata.h">
+      <Filter>decoders\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sound\audiostream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sound\interleaver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sound\sound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sound\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\sound\decoders\aac.cpp">
+      <Filter>decoders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sound\decoders\adpcm.cpp">
+      <Filter>decoders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sound\decoders\asf.cpp">
+      <Filter>decoders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sound\decoders\codec.cpp">
+      <Filter>decoders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sound\decoders\mp3.cpp">
+      <Filter>decoders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sound\decoders\pcm.cpp">
+      <Filter>decoders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sound\decoders\vorbis.cpp">
+      <Filter>decoders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sound\decoders\wave.cpp">
+      <Filter>decoders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sound\decoders\wma.cpp">
+      <Filter>decoders\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sound\audiostream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sound\interleaver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sound\sound.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

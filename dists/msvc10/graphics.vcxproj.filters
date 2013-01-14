@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="images">
+      <UniqueIdentifier>{bb138fcb-9dff-4916-a340-844535b5d2da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="images\Header Files">
+      <UniqueIdentifier>{27dec06f-aebe-4c80-9f1b-bfac19cc3df6}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="images\Source Files">
+      <UniqueIdentifier>{6b3c0c33-a0e3-46b2-a2d7-8182b7f7e431}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\graphics\camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\cursor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\font.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\fpscounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\glcontainer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\graphics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\guifrontelement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\queueable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\queueman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\renderable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\ttf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\yuv_to_rgb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\images\dds.h">
+      <Filter>images\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\images\decoder.h">
+      <Filter>images\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\images\dumptga.h">
+      <Filter>images\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\images\s3tc.h">
+      <Filter>images\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\images\sbm.h">
+      <Filter>images\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\images\screenshot.h">
+      <Filter>images\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\images\surface.h">
+      <Filter>images\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\images\tga.h">
+      <Filter>images\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\images\tpc.h">
+      <Filter>images\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\images\txb.h">
+      <Filter>images\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\images\txi.h">
+      <Filter>images\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\images\txitypes.h">
+      <Filter>images\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\graphics\images\winiconimage.h">
+      <Filter>images\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\graphics\camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\cursor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\fpscounter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\glcontainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\guifrontelement.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\queueable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\queueman.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\renderable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\ttf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\yuv_to_rgb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\images\dds.cpp">
+      <Filter>images\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\images\decoder.cpp">
+      <Filter>images\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\images\dumptga.cpp">
+      <Filter>images\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\images\s3tc.cpp">
+      <Filter>images\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\images\sbm.cpp">
+      <Filter>images\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\images\screenshot.cpp">
+      <Filter>images\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\images\surface.cpp">
+      <Filter>images\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\images\tga.cpp">
+      <Filter>images\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\images\tpc.cpp">
+      <Filter>images\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\images\txb.cpp">
+      <Filter>images\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\images\txi.cpp">
+      <Filter>images\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\images\txitypes.cpp">
+      <Filter>images\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\graphics\images\winiconimage.cpp">
+      <Filter>images\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

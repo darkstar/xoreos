@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AFC376E8-AF63-4DAF-ABA2-0FBA7ACF5913}</ProjectGuid>
+    <RootNamespace>graphics_aurora</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="local_properties.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="local_properties.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\graphics\aurora\abcfont.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\animation.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\animnode.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\cube.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\cursor.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\cursorman.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\fontman.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\fps.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\guiquad.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\model.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\modelnode.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\model_kotor.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\model_nwn.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\model_nwn2.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\model_witcher.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\pltfile.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\text.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\texture.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\texturefont.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\textureman.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\ttffont.h" />
+    <ClInclude Include="..\..\src\graphics\aurora\types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\graphics\aurora\abcfont.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\animation.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\animnode.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\cube.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\cursor.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\cursorman.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\fontman.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\fps.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\guiquad.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\model.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\modelnode.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\model_kotor.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\model_nwn.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\model_nwn2.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\model_witcher.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\pltfile.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\text.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\texture.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\texturefont.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\textureman.cpp" />
+    <ClCompile Include="..\..\src\graphics\aurora\ttffont.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
