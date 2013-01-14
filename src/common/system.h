@@ -44,7 +44,7 @@
 	#define XOREOS_LITTLE_ENDIAN
 
 	#ifndef PACKAGE_STRING
-	#define PACKAGE_STRING "xoreos git"
+	#include "build-aux/git-revision.h"
 	#endif
 
 	#define FORCEINLINE __forceinline
