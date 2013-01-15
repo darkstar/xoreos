@@ -5,3 +5,4 @@ ipch/
 *.sdf
 *.opensdf
 *~
+git-revision.h
