@@ -23,41 +23,65 @@
  * The Electron engine, Copyright (c) Obsidian Entertainment and BioWare corp.
  */
 
-/** @file engines/kotor/gui/widgets/button.h
- *  A KotOR button widget.
+/** @file graphics/indexbuffer.cpp
+ *  A index buffer implementation.
  */
 
-#ifndef ENGINES_KOTOR_GUI_WIDGETS_BUTTON_H
-#define ENGINES_KOTOR_GUI_WIDGETS_BUTTON_H
+#include <cstdlib>
 
-#include "sound/types.h"
+#include "graphics/indexbuffer.h"
 
-#include "engines/kotor/gui/widgets/kotorwidget.h"
+namespace Graphics {
 
-namespace Engines {
+IndexBuffer::IndexBuffer() : _count(0), _size(0), _type(GL_UNSIGNED_INT), _data(0) {
+	//ctor
+}
 
-namespace KotOR {
+IndexBuffer::IndexBuffer(const IndexBuffer &other) {
+	*this = other;
+}
 
-class WidgetButton : public KotORWidget {
-public:
-	WidgetButton(::Engines::GUI &gui, const Common::UString &tag);
-	~WidgetButton();
+IndexBuffer::~IndexBuffer() {
+	if (_data)
+		std::free(_data);
+}
 
-	void load(const Aurora::GFFStruct &gff);
+IndexBuffer &IndexBuffer::operator=(const IndexBuffer &other) {
+	if (this != &other) {
+		setSize(other._count, other._size, other._type);
+		memcpy(_data, other._data, other._count * other._size);
+	}
+	return *this;
+}
 
-	void mouseUp(uint8 state, float x, float y);
+void IndexBuffer::setSize(uint32 indexCount, uint32 indexSize, GLenum indexType) {
+	_count = indexCount;
+	_size = indexSize;
+	_type = indexType;
 
-	virtual void enter();
+	if (_data)
+		std::free(_data);
 
-	virtual void leave();
+	if (_count * _size)
+		_data = std::malloc(_count * _size);
+	else
+		_data = NULL;
+}
 
-private:
-	Sound::ChannelHandle _sound;
-	float _unselectedR, _unselectedG, _unselectedB, _unselectedA;
-};
+GLvoid *IndexBuffer::getData() {
+	return _data;
+}
 
-} // End of namespace KotOR
+const GLvoid *IndexBuffer::getData() const {
+	return _data;
+}
 
-} // End of namespace Engines
+uint32 IndexBuffer::getCount() const {
+	return _count;
+}
 
-#endif // ENGINES_KOTOR_GUI_WIDGETS_BUTTON_H
+GLenum IndexBuffer::getType() const {
+	return _type;
+}
+
+}

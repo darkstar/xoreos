@@ -112,6 +112,9 @@ void GraphicsManager::init() {
 	if (SDL_Init(sdlInitFlags) < 0)
 		throw Common::Exception("Failed to initialize SDL: %s", SDL_GetError());
 
+	// Set the window title to our name
+	setWindowTitle(PACKAGE_STRING);
+
 	int  width  = ConfigMan.getInt ("width"     , 800);
 	int  height = ConfigMan.getInt ("height"    , 600);
 	bool fs     = ConfigMan.getBool("fullscreen", false);
@@ -128,9 +131,6 @@ void GraphicsManager::init() {
 	// Set the gamma correction to what the config specifies
 	if (ConfigMan.hasKey("gamma"))
 		setGamma(ConfigMan.getDouble("gamma", 1.0));
-
-	// Set the window title to our name
-	setWindowTitle(PACKAGE_STRING);
 
 	_ready = true;
 }
@@ -196,7 +196,7 @@ void GraphicsManager::initSize(int width, int height, bool fullscreen) {
 	// If we're currently in 16bpp mode, we try the higher two first as well,
 	// before being okay with native 16bpp mode.
 
-	const int colorModes[] = {bpp == 16 ? 32 : bpp, bpp == 24 ? 32 : 24, 16 };
+	const int colorModes[] = { bpp == 16 ? 32 : bpp, bpp == 24 ? 32 : 24, 16 };
 
 	bool foundMode = false;
 	for (int i = 0; i < ARRAYSIZE(colorModes); i++) {
@@ -276,7 +276,7 @@ int GraphicsManager::probeFSAA(int width, int height, int bpp, uint32 flags) {
 		SDL_GL_SetAttribute(SDL_GL_RED_SIZE    ,   8);
 		SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE  ,   8);
 		SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE   ,   8);
-		SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE  , bpp);
+		SDL_GL_SetAttribute(SDL_GL_ALPHA_SIZE  ,   8);
 		SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER,   1);
 
 		SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 1);
@@ -295,7 +295,7 @@ bool GraphicsManager::setupSDLGL(int width, int height, int bpp, uint32 flags) {
 	SDL_GL_SetAttribute(SDL_GL_RED_SIZE    ,   8);
 	SDL_GL_SetAttribute(SDL_GL_GREEN_SIZE  ,   8);
 	SDL_GL_SetAttribute(SDL_GL_BLUE_SIZE   ,   8);
-	SDL_GL_SetAttribute(SDL_GL_DEPTH_SIZE  , bpp);
+	SDL_GL_SetAttribute(SDL_GL_ALPHA_SIZE  ,   8);
 	SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER,   1);
 
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLEBUFFERS, 0);

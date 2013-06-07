@@ -23,41 +23,50 @@
  * The Electron engine, Copyright (c) Obsidian Entertainment and BioWare corp.
  */
 
-/** @file engines/kotor/gui/widgets/button.h
- *  A KotOR button widget.
+/** @file graphics/indexbuffer.h
+ *  A index buffer.
  */
 
-#ifndef ENGINES_KOTOR_GUI_WIDGETS_BUTTON_H
-#define ENGINES_KOTOR_GUI_WIDGETS_BUTTON_H
+#ifndef GRAPHICS_INDEXBUFFER_H
+#define GRAPHICS_INDEXBUFFER_H
 
-#include "sound/types.h"
+#include "graphics/types.h"
 
-#include "engines/kotor/gui/widgets/kotorwidget.h"
+namespace Graphics {
 
-namespace Engines {
-
-namespace KotOR {
-
-class WidgetButton : public KotORWidget {
+/** Buffer containing indices data */
+class IndexBuffer {
 public:
-	WidgetButton(::Engines::GUI &gui, const Common::UString &tag);
-	~WidgetButton();
+	IndexBuffer();
 
-	void load(const Aurora::GFFStruct &gff);
+	IndexBuffer(const IndexBuffer &other);
 
-	void mouseUp(uint8 state, float x, float y);
+	~IndexBuffer();
 
-	virtual void enter();
+	IndexBuffer &operator=(const IndexBuffer &other);
 
-	virtual void leave();
+	/** Change buffer size. Will allocate memory, free previous */
+	void setSize(uint32 indexCount, uint32 indexSize, GLenum indexType);
+
+	/** Access buffer data */
+	GLvoid *getData();
+
+	/** Access buffer data */
+	const GLvoid *getData() const;
+
+	/** Get element count */
+	uint32 getCount() const;
+
+	/** Get element type */
+	GLenum getType() const;
 
 private:
-	Sound::ChannelHandle _sound;
-	float _unselectedR, _unselectedG, _unselectedB, _unselectedA;
+	uint32 _count; ///< Number of elements in buffer
+	uint32 _size;  ///< Size of a buffer element in bytes
+	GLenum _type;  ///< Element type (GL_UNSIGNED_SHORT, GL_UNSIGNED_INT, ...)
+	GLvoid *_data; ///< Buffer data
 };
 
-} // End of namespace KotOR
+}
 
-} // End of namespace Engines
-
-#endif // ENGINES_KOTOR_GUI_WIDGETS_BUTTON_H
+#endif // GRAPHICS_INDEXBUFFER_H

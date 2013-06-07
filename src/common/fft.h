@@ -39,7 +39,7 @@
 
 namespace Common {
 
-class Complex;
+struct Complex;
 
 /** (Inverse) Fast Fourier Transform. */
 class FFT {
@@ -69,7 +69,6 @@ private:
 	Complex *_tmpBuf;
 
 	int _splitRadix;
-	int _permutation;
 
 	static int splitRadixPermutation(int i, int n, bool inverse);
 };
