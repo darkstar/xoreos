@@ -390,8 +390,8 @@ void NCSFile::executeStep() {
 
 	try {
 		(this->*(_opcodes[opcode].proc))(type);
-	} catch (Common::Exception e) {
-		throw e;
+	} catch (Common::Exception &e) {
+		throw;
 	}
 
 	_stack.print();
@@ -583,8 +583,8 @@ void NCSFile::o_logand(InstructionType type) {
 		int32 arg1 = _stack.pop().getInt();
 		int32 arg2 = _stack.pop().getInt();
 		_stack.push(arg1 && arg2);
-	} catch (Common::Exception e) {
-		throw e;
+	} catch (Common::Exception &e) {
+		throw;
 	}
 }
 
@@ -596,8 +596,8 @@ void NCSFile::o_logor(InstructionType type) {
 		int32 arg1 = _stack.pop().getInt();
 		int32 arg2 = _stack.pop().getInt();
 		_stack.push(arg1 || arg2);
-	} catch (Common::Exception e) {
-		throw e;
+	} catch (Common::Exception &e) {
+		throw;
 	}
 }
 
@@ -609,8 +609,8 @@ void NCSFile::o_incor(InstructionType type) {
 		int32 arg1 = _stack.pop().getInt();
 		int32 arg2 = _stack.pop().getInt();
 		_stack.push(arg1 | arg2);
-	} catch (Common::Exception e) {
-		throw e;
+	} catch (Common::Exception &e) {
+		throw;
 	}
 }
 
@@ -622,8 +622,8 @@ void NCSFile::o_excor(InstructionType type) {
 		int32 arg1 = _stack.pop().getInt();
 		int32 arg2 = _stack.pop().getInt();
 		_stack.push(arg1 ^ arg2);
-	} catch (Common::Exception e) {
-		throw e;
+	} catch (Common::Exception &e) {
+		throw;
 	}
 }
 
@@ -635,8 +635,8 @@ void NCSFile::o_booland(InstructionType type) {
 		int32 arg1 = _stack.pop().getInt();
 		int32 arg2 = _stack.pop().getInt();
 		_stack.push(arg1 && arg2);
-	} catch (Common::Exception e) {
-		throw e;
+	} catch (Common::Exception &e) {
+		throw;
 	}
 }
 
@@ -667,8 +667,8 @@ void NCSFile::o_geq(InstructionType type) {
 				int32 arg1 = _stack.pop().getInt();
 				int32 arg2 = _stack.pop().getInt();
 				_stack.push(arg2 >= arg1);
-			} catch (Common::Exception e) {
-				throw e;
+			} catch (Common::Exception &e) {
+				throw;
 			}
 			break;
 
@@ -677,8 +677,8 @@ void NCSFile::o_geq(InstructionType type) {
 				float arg1 = _stack.pop().getFloat();
 				float arg2 = _stack.pop().getFloat();
 				_stack.push(arg2 >= arg1);
-			} catch (Common::Exception e) {
-				throw e;
+			} catch (Common::Exception &e) {
+				throw;
 			}
 			break;
 
@@ -694,8 +694,8 @@ void NCSFile::o_gt(InstructionType type) {
 				int32 arg1 = _stack.pop().getInt();
 				int32 arg2 = _stack.pop().getInt();
 				_stack.push(arg2 > arg1);
-			} catch (Common::Exception e) {
-				throw e;
+			} catch (Common::Exception &e) {
+				throw;
 			}
 			break;
 
@@ -704,8 +704,8 @@ void NCSFile::o_gt(InstructionType type) {
 				float arg1 = _stack.pop().getFloat();
 				float arg2 = _stack.pop().getFloat();
 				_stack.push(arg2 > arg1);
-			} catch (Common::Exception e) {
-				throw e;
+			} catch (Common::Exception &e) {
+				throw;
 			}
 			break;
 
@@ -721,8 +721,8 @@ void NCSFile::o_lt(InstructionType type) {
 				int32 arg1 = _stack.pop().getInt();
 				int32 arg2 = _stack.pop().getInt();
 				_stack.push(arg2 < arg1);
-			} catch (Common::Exception e) {
-				throw e;
+			} catch (Common::Exception &e) {
+				throw;
 			}
 			break;
 
@@ -731,8 +731,8 @@ void NCSFile::o_lt(InstructionType type) {
 				float arg1 = _stack.pop().getFloat();
 				float arg2 = _stack.pop().getFloat();
 				_stack.push(arg2 < arg1);
-			} catch (Common::Exception e) {
-				throw e;
+			} catch (Common::Exception &e) {
+				throw;
 			}
 			break;
 
@@ -748,8 +748,8 @@ void NCSFile::o_leq(InstructionType type) {
 				int32 arg1 = _stack.pop().getInt();
 				int32 arg2 = _stack.pop().getInt();
 				_stack.push(arg2 <= arg1);
-			} catch (Common::Exception e) {
-				throw e;
+			} catch (Common::Exception &e) {
+				throw;
 			}
 			break;
 
@@ -758,8 +758,8 @@ void NCSFile::o_leq(InstructionType type) {
 				float arg1 = _stack.pop().getFloat();
 				float arg2 = _stack.pop().getFloat();
 				_stack.push(arg2 <= arg1);
-			} catch (Common::Exception e) {
-				throw e;
+			} catch (Common::Exception &e) {
+				throw;
 			}
 			break;
 
@@ -776,8 +776,8 @@ void NCSFile::o_shleft(InstructionType type) {
 		int32 arg1 = _stack.pop().getInt();
 		int32 arg2 = _stack.pop().getInt();
 		_stack.push(arg2 << arg1);
-	} catch (Common::Exception e) {
-		throw e;
+	} catch (Common::Exception &e) {
+		throw;
 	}
 }
 
@@ -789,8 +789,8 @@ void NCSFile::o_shright(InstructionType type) {
 		int32 arg1 = _stack.pop().getInt();
 		int32 arg2 = _stack.pop().getInt();
 		_stack.push(arg2 >> arg1);
-	} catch (Common::Exception e) {
-		throw e;
+	} catch (Common::Exception &e) {
+		throw;
 	}
 }
 
@@ -804,8 +804,8 @@ void NCSFile::o_ushright(InstructionType type) {
 		int32 arg1 = _stack.pop().getInt();
 		int32 arg2 = _stack.pop().getInt();
 		_stack.push(arg2 >> arg1);
-	} catch (Common::Exception e) {
-		throw e;
+	} catch (Common::Exception &e) {
+		throw;
 	}
 }
 
@@ -823,8 +823,8 @@ void NCSFile::o_mod(InstructionType type) {
 			throw Common::Exception("NCSFile::o_mod(): Modulus by negative number (%d %% %d)", arg2, arg1);
 
 		_stack.push(arg2 % arg1);
-	} catch (Common::Exception e) {
-		throw e;
+	} catch (Common::Exception &e) {
+		throw;
 	}
 }
 
@@ -833,16 +833,16 @@ void NCSFile::o_neg(InstructionType type) {
 		case kInstTypeInt:
 			try {
 				_stack.push(-_stack.pop().getInt());
-			} catch (Common::Exception e) {
-				throw e;
+			} catch (Common::Exception &e) {
+				throw;
 			}
 			break;
 
 		case kInstTypeFloat:
 			try {
 				_stack.push(-_stack.pop().getFloat());
-			} catch (Common::Exception e) {
-				throw e;
+			} catch (Common::Exception &e) {
+				throw;
 			}
 			break;
 
@@ -857,8 +857,8 @@ void NCSFile::o_comp(InstructionType type) {
 
 	try {
 		_stack.push(~_stack.pop().getInt());
-	} catch (Common::Exception e) {
-		throw e;
+	} catch (Common::Exception &e) {
+		throw;
 	}
 }
 

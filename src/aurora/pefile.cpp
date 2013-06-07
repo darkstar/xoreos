@@ -120,6 +120,7 @@ Common::SeekableReadStream *PEFile::getResource(uint32 index) const {
 		byte *data = new byte[cursorStreams[i]->size() - 4];
 		cursorStreams[i]->read(data, cursorStreams[i]->size() - 4);
 		out.write(data, cursorStreams[i]->size() - 4);
+		delete[] data;
 		delete cursorStreams[i];
 	}
 
@@ -129,7 +130,7 @@ Common::SeekableReadStream *PEFile::getResource(uint32 index) const {
 void PEFile::load(const std::vector<Common::UString> &remap) {
 	std::vector<Common::PEResourceID> cursorList = _peFile->getNameList(Common::kPEGroupCursor);
 
-	for (std::vector<Common::PEResourceID>::const_iterator it = cursorList.begin(); it != cursorList.end(); it++) {
+	for (std::vector<Common::PEResourceID>::const_iterator it = cursorList.begin(); it != cursorList.end(); ++it) {
 		Resource res;
 
 		if (it->getID() == 0xFFFFFFFF)

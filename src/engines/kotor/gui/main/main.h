@@ -57,6 +57,7 @@ private:
 
 	void createMovies();
 	void createOptions();
+	void configureHighlighting();
 };
 
 } // End of namespace KotOR

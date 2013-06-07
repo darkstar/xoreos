@@ -39,6 +39,8 @@
 #include "engines/kotor/gui/main/movies.h"
 #include "engines/kotor/gui/main/options.h"
 
+#include "gui/widgets/button.h"
+
 namespace Engines {
 
 namespace KotOR {
@@ -47,6 +49,7 @@ MainMenu::MainMenu(Module &module, bool isXbox) : _module(&module), _isXbox(isXb
 	load(isXbox ? "mainmenu" : "mainmenu16x12");
 
 	addBackground("back");
+	configureHighlighting();
 
 	_movies = 0;
 	_options = 0;
@@ -73,6 +76,13 @@ void MainMenu::createOptions() {
 
 }
 
+void MainMenu::configureHighlighting() {
+	setDefaultHighlighting(getButton("BTN_NEWGAME")->getTextHighlightableComponent());
+	setDefaultHighlighting(getButton("BTN_LOADGAME")->getTextHighlightableComponent());
+	setDefaultHighlighting(getButton("BTN_MOVIES")->getTextHighlightableComponent());
+	setDefaultHighlighting(getButton("BTN_OPTIONS")->getTextHighlightableComponent());
+	setDefaultHighlighting(getButton("BTN_EXIT")->getTextHighlightableComponent());
+}
 
 void MainMenu::initWidget(Widget &widget) {
 	// BioWare logo, the original game doesn't display it.
