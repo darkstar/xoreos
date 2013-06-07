@@ -23,40 +23,70 @@
  * The Electron engine, Copyright (c) Obsidian Entertainment and BioWare corp.
  */
 
-/** @file engines/kotor/gui/widgets/button.h
- *  A KotOR button widget.
+/** @file common/vector3.h
+ *  A 3d vector.
  */
 
-#ifndef ENGINES_KOTOR_GUI_WIDGETS_BUTTON_H
-#define ENGINES_KOTOR_GUI_WIDGETS_BUTTON_H
+#ifndef COMMON_VECTOR3_H
+#define COMMON_VECTOR3_H
 
-#include "sound/types.h"
+#include <cmath>
 
-#include "engines/kotor/gui/widgets/kotorwidget.h"
+namespace Common {
 
-namespace Engines {
+class Vector3 {
+	float _x, _y, _z;
 
-namespace KotOR {
-
-class WidgetButton : public KotORWidget {
 public:
-	WidgetButton(::Engines::GUI &gui, const Common::UString &tag);
-	~WidgetButton();
+	Vector3() {
+	}
 
-	void load(const Aurora::GFFStruct &gff);
+	Vector3(float x, float y, float z) : _x(x), _y(y), _z(z) {
+	}
 
-	void mouseUp(uint8 state, float x, float y);
+	Vector3(const Vector3 &b) : _x(b._x), _y(b._y), _z(b._z) {
+	}
 
-	virtual void enter();
+	const float &operator[] (int i) const {
+		return (&_x)[i];
+	}
 
-	virtual void leave();
+	float &operator[] (int i) {
+		return (&_x)[i];
+	}
 
-private:
-	Sound::ChannelHandle _sound;
+	Vector3 operator - (const Vector3 &v) const {
+		return Vector3(_x - v._x, _y - v._y, _z - v._z);
+	}
+
+	Vector3 operator + (const Vector3 &v) const {
+		return Vector3(_x + v._x, _y + v._y, _z + v._z);
+	}
+
+	Vector3 operator * (const float f) const {
+		return Vector3(_x * f, _y * f, _z * f);
+	}
+
+	Vector3 cross(const Vector3 & v) const {
+		return Vector3(_y * v._z - _z * v._y,
+					_z * v._x - _x * v._z,
+					_x * v._y - _y * v._x);
+	}
+
+	float dot(const Vector3 & v) const {
+		return _x * v._x + _y * v._y + _z * v._z;
+	}
+
+	float length() const {
+		return sqrtf((*this).dot(*this));
+	}
+
+	Vector3 & norm() {
+		(*this) = (*this) * (1 / length());
+		return *this;
+	}
 };
 
-} // End of namespace KotOR
+}
 
-} // End of namespace Engines
-
-#endif // ENGINES_KOTOR_GUI_WIDGETS_BUTTON_H
+#endif // COMMON_VECTOR3_H
